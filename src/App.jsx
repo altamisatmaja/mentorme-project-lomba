@@ -7,6 +7,7 @@ import Dashboard from './pages/Dashboard';
 import SeconDashboard from './pages/SeconDashboard';
 import InputKeuangan from './pages/InputKeuangan';
 import Edit from './pages/Edit';
+import InputInvestasi from './pages/InputInvestasi';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
         <Route path="/dashboard" element={ <Dashboard/> } />
         <Route path="/secondashboard" element={ <SeconDashboard/> } />
         <Route path="/edit/:id" element={ <Edit/> } />
+        <Route path="/inputinvestasi" element={ <InputInvestasi/> } />
       </Routes>
     </div>
   )
