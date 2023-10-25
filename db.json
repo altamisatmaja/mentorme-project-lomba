@@ -1,161 +1,73 @@
 {
-  "users": [
+  "dashboardmentor": [
     {
-      "id": "asda",
-      "nama": "adadadalamtais",
-      "email": "altamis@gmail.com",
-      "password": "123"
+      "id": "16849202",
+      "namamentor": "Altamis Atmaja, S.Kom, M.Kom",
+      "spesialisasi": "Hukum",
+      "sertifikasi": "Dicoding Academy",
+      "minatpenelitian": "Software Engineering",
+      "deskripsimentor": "Merupakan dosen dan peneliti di fakultas ilmu komputer. Menjadi staf pengajar di fakultas ilmu komputer dengan fokus bidang keahlian Rekayasa Perangkat Lunak . Sampai saat ini aktif dalam kegiatan penelitian dan pengabdian yang berfokus di daerah Kabupaten Jember dan sekitarnya. Beliau saat ini juga aktif dalam menghasilkan karya buku dalam 5 tahun terakhir ini.",
+      "pendidikan": "S1 Sistem Informasi Universitas Jember",
+      "hasilpenelitian": "Penerapan metode certainty factor untuk sistem pakar diagnosis hama dan penyakit pada tanaman tembakau",
+      "fee": "35000"
     },
     {
-      "id": "adad",
-      "nama": "ada",
-      "email": "altamis@gmail.com",
-      "password": "123"
+      "id": "16849203",
+      "namamentor": "Altamis Atmaja, S.Kom, M.Kom",
+      "spesialisasi": "Hukum",
+      "sertifikasi": "Dicoding Academy",
+      "minatpenelitian": "Software Engineering",
+      "deskripsimentor": "Merupakan dosen dan peneliti di fakultas ilmu komputer. Menjadi staf pengajar di fakultas ilmu komputer dengan fokus bidang keahlian Rekayasa Perangkat Lunak . Sampai saat ini aktif dalam kegiatan penelitian dan pengabdian yang berfokus di daerah Kabupaten Jember dan sekitarnya. Beliau saat ini juga aktif dalam menghasilkan karya buku dalam 5 tahun terakhir ini.",
+      "pendidikan": "S1 Sistem Informasi Universitas Jember",
+      "hasilpenelitian": "Penerapan metode certainty factor untuk sistem pakar diagnosis hama dan penyakit pada tanaman tembakau",
+      "fee": "35000"
     },
     {
-      "id": "adadadad",
-      "nama": "ada",
-      "email": "altamis@gmail.com",
-      "password": "123"
-    },
-    {
-      "id": "adadadadadsa",
-      "nama": "ada",
-      "email": "altamis@gmail.com",
-      "password": "123"
-    },
-    {
-      "id": "asdada",
-      "nama": "Altamis Fattah Atmaja",
-      "email": "altamis@gmail.com",
-      "password": "123"
-    },
-    {
-      "id": "dada",
-      "nama": "dad",
-      "email": "asda@gmail.com",
-      "password": "123"
-    },
-    {
-      "id": "altamisatmaja",
-      "nama": "Altamis Fattah Atmaja",
-      "email": "altamisfattah16@gmail.com",
-      "password": "123"
-    },
-    {
-      "id": "aalatmaja",
-      "nama": "Altamis Atmaja",
-      "email": "alamis123@gmail.com",
-      "password": "123"
-    },
-    {
-      "id": "altamis atmaj",
-      "nama": "ada",
-      "email": "aad@gmail.com",
-      "password": "adad"
-    },
-    {
-      "id": "adaasdaadad",
-      "nama": "adadada",
-      "email": "ad@gmailc.om",
-      "password": "ad"
-    },
-    {
-      "id": "rECwfpf",
-      "nama": "",
-      "email": "",
-      "password": ""
-    },
-    {
-      "id": "asdad",
-      "nama": "altamis ",
-      "email": "altamis@gmail.com",
-      "password": "123"
-    },
-    {
-      "id": "alala",
-      "nama": "alalala",
-      "email": "ada@gma.cd",
-      "password": "aa"
-    },
-    {
-      "id": "da",
-      "nama": "ada",
-      "email": "ad@gma.com",
-      "password": "ad"
+      "id": 1698253939408,
+      "namamentor": "Ady Firdau, S.Kom, M.Kom.",
+      "sertifikasi": "Universitas Jember",
+      "spesialisasi": "IT",
+      "minatpenelitian": "IT",
+      "deskripsimentor": "Sepuh",
+      "pendidikan": "S1 Universitas Jember\nS2 Universitas Harvard",
+      "hasilpenelitian": "Blockhanin",
+      "fee": "35000"
     }
   ],
-  "inputkeuangan": [
+  "dashboardjadwal": [
     {
-      "tanggal": "22/08/2023",
-      "keterangan": "Makan Go Food1",
-      "kategori": "Pengeluaran",
-      "detailkategori": "Makanan",
-      "nilai": "12000"
+      "id": "16849202",
+      "judulmentoring": "Ady Firdau, S.Kom, M.Kom.",
+      "spesialisasi": "Hukum",
+      "sertifikasi": "Dicoding Academy",
+      "minatpenelitian": "Software Engineering",
+      "deskripsimentor": "Merupakan dosen dan peneliti di fakultas ilmu komputer. Menjadi staf pengajar di fakultas ilmu komputer dengan fokus bidang keahlian Rekayasa Perangkat Lunak . Sampai saat ini aktif dalam kegiatan penelitian dan pengabdian yang berfokus di daerah Kabupaten Jember dan sekitarnya. Beliau saat ini juga aktif dalam menghasilkan karya buku dalam 5 tahun terakhir ini.",
+      "pendidikan": "S1 Sistem Informasi Universitas Jember",
+      "hasilpenelitian": "Penerapan metode certainty factor untuk sistem pakar diagnosis hama dan penyakit pada tanaman tembakau"
     },
     {
-      "tanggal": "23/08/2023",
-      "keterangan": "Makan Go Food2",
-      "kategori": "Pengeluaran",
-      "detailkategori": "Makanan",
-      "nilai": "10000"
-    },
-    {
-      "tanggal": "24/08/2023",
-      "keterangan": "Makan Go Food3",
-      "kategori": "Pengeluaran",
-      "detailkategori": "Makanan",
-      "nilai": "11000"
+      "id": "16849203",
+      "judulmentoring": "Ady Firdau, S.Kom, M.Kom.",
+      "spesialisasi": "Hukum",
+      "sertifikasi": "Dicoding Academy",
+      "minatpenelitian": "Software Engineering",
+      "deskripsimentor": "Merupakan dosen dan peneliti di fakultas ilmu komputer. Menjadi staf pengajar di fakultas ilmu komputer dengan fokus bidang keahlian Rekayasa Perangkat Lunak . Sampai saat ini aktif dalam kegiatan penelitian dan pengabdian yang berfokus di daerah Kabupaten Jember dan sekitarnya. Beliau saat ini juga aktif dalam menghasilkan karya buku dalam 5 tahun terakhir ini.",
+      "pendidikan": "S1 Sistem Informasi Universitas Jember",
+      "hasilpenelitian": "Penerapan metode certainty factor untuk sistem pakar diagnosis hama dan penyakit pada tanaman tembakau"
     }
   ],
-  "datakeuangan": [
+  "akunuser": [
     {
-      "id": 1697743949840,
-      "tanggal": "21/12/2023",
-      "keterangan": "Tiket Kereta",
-      "kategori": "Transportasi",
-      "nilai": "80000",
-      "jenis": "Pengeluaran"
-    },
+      "id": "16849202",
+      "username": "altamis",
+      "email": "altamis@gmail.com",
+      "password": "123"
+    }
+  ],
+  "akunadmin": [
     {
-      "id": 1697745253451,
-      "tanggal": "22/12/20",
-      "keterangan": "Saham ADMR",
-      "kategori": "Investasi",
-      "nilai": "4000000",
-      "jenis": "Pemasukan"
-    },
-    {
-      "id": 1697746729068,
-      "tanggal": "22/02/2022",
-      "keterangan": "Gaji Kerja",
-      "kategori": "Penghasilan",
-      "nilai": "2000000",
-      "jenis": "Pemasukan"
-    },
-    {
-      "id": 1697746749019,
-      "tanggal": "22/12/22",
-      "keterangan": "Tiket Bus",
-      "kategori": "Transportasi",
-      "nilai": "200000",
-      "jenis": "Pengeluran"
-    },
-    {
-      "id": 1697755584147,
-      "tanggal": "22/21/1212",
-      "keterangan": "Beli makan bro hehe",
-      "kategori": "Makanan",
-      "nilai": "2000",
-      "jenis": "Pengeluran"
-    },
-    {
-      "id": 1697788432374,
-      "tanggal": "11/02/2023",
-      "keterangan": "Gacoann",
-      "kategori": "Makanan",
-      "nilai": "19000",
-      "jenis": "Pemasukan"
+      "username": "adminmentorme",
+      "password": "rahasia"
     }
   ]
 }

@@ -1,26 +1,34 @@
 import { Route, Routes } from 'react-router-dom'
 import './App.css'
-import Login from "./auth/Login";
-import Register from "./auth/Register";
 import { ToastContainer } from 'react-toastify';
-import Dashboard from './pages/Dashboard';
-import SeconDashboard from './pages/SeconDashboard';
-import InputKeuangan from './pages/InputKeuangan';
-import Edit from './pages/Edit';
-import InputInvestasi from './pages/InputInvestasi';
+import DashboardEdit from '/src/admin/DashboardEdit';
+import DashboardAdmin from '/src/admin/DashboardAdmin';
+import DashboardJadwal from '/src/admin/DashboardJadwal';
+import DashboardLogin from '/src/admin/DashboardLogin';
+import DashboardUser from '/src/admin/DashboardUser';
+import Jadwal from '/src/pages/Jadwal';
+import LandingPage from './pages/LandingPage';
+import Mentoring from './pages/Mentoring';
+import About from './pages/About';
+import Masuk from './auth/Masuk';
+import Daftar from './auth/Daftar';
 
 function App() {
   return (
     <div className='app'>
       <ToastContainer></ToastContainer>
-      {/* <Header/> */}
       <Routes>
-        <Route path="/register" element={ <Register/> } />
-        <Route path="/login" element={ <Login/> } />
-        <Route path="/dashboard" element={ <Dashboard/> } />
-        <Route path="/secondashboard" element={ <SeconDashboard/> } />
-        <Route path="/edit/:id" element={ <Edit/> } />
-        <Route path="/inputinvestasi" element={ <InputInvestasi/> } />
+        <Route path="/" element={ <LandingPage/> } />
+        <Route path="/mentoring" element={ <Mentoring/> } />
+        <Route path="/jadwal" element={ <Jadwal/> } />
+        <Route path="/about" element={ <About/> } />
+        <Route path="/masuk" element={ <Masuk/> } />
+        <Route path="/daftar" element={ <Daftar/> } />
+        <Route path="/edit/:id" element={ <DashboardEdit/> } />
+        <Route path="/dashboardadmin" element={ <DashboardAdmin/> } />
+        <Route path="/dashboardjadwal" element={ <DashboardJadwal/> } />
+        <Route path="/dashboarduser" element={ <DashboardUser/> } />
+        <Route path="/dashboardlogin/" element={ <DashboardLogin/> } />
       </Routes>
     </div>
   )
