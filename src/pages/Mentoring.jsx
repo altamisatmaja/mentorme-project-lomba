@@ -23,7 +23,6 @@ function Mentoring() {
           setDashboardMentor(res.data);
         })
     }
-
   return (
     <div>
       <Navbar />
