@@ -23,20 +23,30 @@
       "fee": "35000"
     },
     {
-      "id": 1698253939408,
-      "namamentor": "Ady Firdau, S.Kom, M.Kom.",
-      "sertifikasi": "Universitas Jember",
-      "spesialisasi": "IT",
-      "minatpenelitian": "IT",
-      "deskripsimentor": "Sepuh",
-      "pendidikan": "S1 Universitas Jember\nS2 Universitas Harvard",
-      "hasilpenelitian": "Blockhanin",
+      "id": "16849203",
+      "namamentor": "Altamis Atmaja, S.Kom, M.Kom",
+      "spesialisasi": "Hukum",
+      "sertifikasi": "Dicoding Academy",
+      "minatpenelitian": "Software Engineering",
+      "deskripsimentor": "Merupakan dosen dan peneliti di fakultas ilmu komputer. Menjadi staf pengajar di fakultas ilmu komputer dengan fokus bidang keahlian Rekayasa Perangkat Lunak . Sampai saat ini aktif dalam kegiatan penelitian dan pengabdian yang berfokus di daerah Kabupaten Jember dan sekitarnya. Beliau saat ini juga aktif dalam menghasilkan karya buku dalam 5 tahun terakhir ini.",
+      "pendidikan": "S1 Sistem Informasi Universitas Jember",
+      "hasilpenelitian": "Penerapan metode certainty factor untuk sistem pakar diagnosis hama dan penyakit pada tanaman tembakau",
       "fee": "35000"
     }
   ],
   "dashboardjadwal": [
     {
       "id": "16849202",
+      "judulmentoring": "Ady Firdau, S.Kom, M.Kom.",
+      "spesialisasi": "Hukum",
+      "sertifikasi": "Dicoding Academy",
+      "minatpenelitian": "Software Engineering",
+      "deskripsimentor": "Merupakan dosen dan peneliti di fakultas ilmu komputer. Menjadi staf pengajar di fakultas ilmu komputer dengan fokus bidang keahlian Rekayasa Perangkat Lunak . Sampai saat ini aktif dalam kegiatan penelitian dan pengabdian yang berfokus di daerah Kabupaten Jember dan sekitarnya. Beliau saat ini juga aktif dalam menghasilkan karya buku dalam 5 tahun terakhir ini.",
+      "pendidikan": "S1 Sistem Informasi Universitas Jember",
+      "hasilpenelitian": "Penerapan metode certainty factor untuk sistem pakar diagnosis hama dan penyakit pada tanaman tembakau"
+    },
+    {
+      "id": "16849203",
       "judulmentoring": "Ady Firdau, S.Kom, M.Kom.",
       "spesialisasi": "Hukum",
       "sertifikasi": "Dicoding Academy",
@@ -66,6 +76,7 @@
   ],
   "akunadmin": [
     {
+      "id": "adminmentorme",
       "username": "adminmentorme",
       "password": "rahasia"
     }

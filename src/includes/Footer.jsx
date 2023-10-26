@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from "react-router-dom";
 
 function Footer() {
   return (
@@ -25,9 +26,11 @@ function Footer() {
                     </a>
                   </li>
                   <li>
-                    <a href="#" className="hover:underline">
-                      Jadi Member
+                  <Link to="/dashboardlogin">
+                    <a className="hover:underline">
+                      Login Administrator
                     </a>
+                    </Link>
                   </li>
                 </ul>
               </div>

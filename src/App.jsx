@@ -6,12 +6,15 @@ import DashboardAdmin from '/src/admin/DashboardAdmin';
 import DashboardJadwal from '/src/admin/DashboardJadwal';
 import DashboardLogin from '/src/admin/DashboardLogin';
 import DashboardUser from '/src/admin/DashboardUser';
+import DashboardRegister from '/src/admin/DashboardRegister';
 import Jadwal from '/src/pages/Jadwal';
 import LandingPage from './pages/LandingPage';
 import Mentoring from './pages/Mentoring';
 import About from './pages/About';
 import Masuk from './auth/Masuk';
 import Daftar from './auth/Daftar';
+import DetailMentor from './pages/DetailMentor';
+import Booking from './pages/Booking';
 
 function App() {
   return (
@@ -29,6 +32,9 @@ function App() {
         <Route path="/dashboardjadwal" element={ <DashboardJadwal/> } />
         <Route path="/dashboarduser" element={ <DashboardUser/> } />
         <Route path="/dashboardlogin/" element={ <DashboardLogin/> } />
+        <Route path="/dashboardregister/" element={ <DashboardRegister/> } />
+        <Route path="/detailmentor/:id" element={ <DetailMentor/> } />
+        <Route path="/booking" element={ <Booking/> } />
       </Routes>
     </div>
   )

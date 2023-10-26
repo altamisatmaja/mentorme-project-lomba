@@ -14,6 +14,7 @@ function Edit() {
     deskripsimentor: '',
     pendidikan: '',
     hasilpenelitian: '',
+    fee: '',
     edit: ''
   });
 

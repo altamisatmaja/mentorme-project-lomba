@@ -7,8 +7,8 @@ function Jadwal() {
     <div>
       <Navbar />
       <div className="container bg-white dark:bg-gray-800 p-3">
-        <div className="ml-4 mt-1 mb-3">
-          <h3 className="bg-blue-50 font-semibold rounded p-2 pl-6 pr-6 inline-block bg-contain">
+        <div className="flex mx-auto">
+          <h3 className="bg-blue-50 mx-auto font-semibold rounded p-2 pl-6 pr-6 inline-block bg-contain">
             Jadwal mentoring Anda
           </h3>
         </div>
