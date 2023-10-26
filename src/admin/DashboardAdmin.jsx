@@ -2,6 +2,7 @@ import axios from 'axios';
 import React, { useEffect, useState } from 'react'
 import { Link, useNavigate } from "react-router-dom";
 import Sidebar from '../includes/Sidebar';
+import DashboardFooter from '../includes/DashboardFooter';
 
 function DashboardAdmin() {
     const navigate = useNavigate();
@@ -17,6 +18,9 @@ function DashboardAdmin() {
     const [pendidikan, pendidikanChange] = useState("");
     const [hasilpenelitian, hasilpenelitianChange] = useState("");
     const [fee, feeChange] = useState("");
+    const [judulmentoring, judulmentoringChange] = useState("");
+    const [jadwal, jadwalChange] = useState("");
+    const [tempat, tempatChange] = useState("");
   
     useEffect(() => {
       ReadDatabase();
@@ -42,6 +46,9 @@ function DashboardAdmin() {
       pendidikanChange("");
       hasilpenelitianChange("");
       feeChange("");
+      judulmentoringChange("");
+      jadwalChange("");
+      tempatChange("");
     }
   
     const handleSubmit = (e) => {
@@ -57,7 +64,10 @@ function DashboardAdmin() {
         deskripsimentor,
         pendidikan,
         hasilpenelitian,
-        fee
+        fee,
+        judulmentoring,
+        jadwal,
+        tempat,
       };
     
       fetch("http://localhost:8083/dashboardmentor", {
@@ -138,9 +148,25 @@ function DashboardAdmin() {
                             </div>                            
                         </div>
                         <div className='px-2 mb-5'>
-                                <p className='text-lg font-medium'>Sertifikasi</p>
-                                <input value={sertifikasi} onChange={e => sertifikasiChange(e.target.value)} required type="text" className='border w-full rounded-md px-2 h-10 text-sm font-medium border-blue-200'/>
+                            <p className='text-lg font-medium'>Sertifikasi</p>
+                            <input value={sertifikasi} onChange={e => sertifikasiChange(e.target.value)} required type="text" className='border w-full rounded-md px-2 h-10 text-sm font-medium border-blue-200'/>
+                        </div>
+                        <div className='flex mt-2 justify-between gap-1'> 
+                            <div className='px-2 w-1/2'>
+                                <p className='text-lg font-medium'>Jadwal</p>
+                                <input required value={jadwal} onChange={(e) => jadwalChange(e.target.value)} type="text" placeholder="Jumat, 25 Oktober 2023 / 10.00 - 11.00 WIB" className='border w-full rounded-md px-2 h-10 text-sm font-medium border-blue-200'/>
+                            </div>                    
+                            <div className='px-2 w-1/2'>
+                                <p className='text-lg font-medium'>Tempat Mentoring</p>
+                                <input required value={tempat} onChange={(e) => tempatChange(e.target.value)} type="text" placeholder="https://unej-id.zoom.us/j/94642770465#success" className='border w-full rounded-md px-2 h-10 text-sm font-medium border-blue-200'/>
+                            </div>                            
+                        </div>
+                        <div className='flex mt-2 justify-between mb-4'> 
+                            <div className='px-2 w-full'>
+                                <p className='text-lg font-medium'>Judul Mentoring</p>
+                                <input required value={judulmentoring} onChange={(e) => judulmentoringChange(e.target.value)} type="text" placeholder="Masukkan judul mentoring..." className='border w-full rounded-md px-2 h-10 text-sm font-medium border-blue-200'/>
                             </div>
+                        </div>
                         <div class="w-full px-2 mx-auto mt-5">
                         <p className='text-lg font-medium'>Deksripsi Mentor</p>
                         <div class="mb-4 w-full bg-gray-50 rounded-lg border border-gray-200 dark:bg-gray-700 dark:border-gray-600">
@@ -336,12 +362,8 @@ function DashboardAdmin() {
                         </div>
                         </td>
                         <td className="px-6 py-4">
-                        <div className="flex gap-2">
-                            <span
-                            className="inline-flex items-center gap-1 rounded-full bg-violet-50 px-2 py-1 text-xs font-semibold text-violet-600"
-                            >
-                            {data.minatpenelitian}
-                            </span>
+                        <div className="text-sm">
+                            <div className="font-medium text-gray-700">{data.minatpenelitian}</div>
                         </div>
                         </td>
                         <td className="px-6 py-4">
@@ -354,6 +376,15 @@ function DashboardAdmin() {
                         </div>
                         </td>
                         <td className="px-6 py-4">
+                        <Link to={`/dashboardjadwal/${data.id}`}>
+                        <div className="flex gap-2">
+                            <span
+                            className="inline-flex items-center gap-1 rounded-lg  border border-violet-600 px-2 py-2 mb-2 text-xs font-semibold text-violet-600"
+                            >
+                            Tambah Jadwal
+                            </span>
+                        </div>
+                        </Link>
                         <div className="flex gap-4">
                             <button onClick={() => handleDelete(data.id)}>
                             <a x-data="{ tooltip: 'Delete' }" href="#">
@@ -402,6 +433,7 @@ function DashboardAdmin() {
                     </tbody>
                 </table>
                 </div>
+        <DashboardFooter/>
             </div>
         </div>
     </div>

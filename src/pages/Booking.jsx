@@ -5,6 +5,32 @@ import { useParams, useNavigate } from 'react-router-dom';
 import axios from 'axios';
 
 function Booking() {
+
+  let { id } = useParams();
+  const navigate = useNavigate();
+
+  const [ReadData, setReadData] = useState({
+    namamentor: '',
+    sertifikasi: '',
+    spesialisasi: '',
+    minatpenelitian: '',
+    deskripsimentor: '',
+    pendidikan: '',
+    hasilpenelitian: '',
+    fee: '',
+    edit: ''
+  });
+
+  useEffect(() => {
+    axios.get(`http://localhost:8083/dashboardmentor/${id}`)
+      .then((res) => {
+        setReadData(res.data);
+      })
+      .catch((error) => {
+        console.error('Gagal mengambil data:', error);
+      });
+  }, [id]);
+  
   return (
     <div>
       <Navbar />

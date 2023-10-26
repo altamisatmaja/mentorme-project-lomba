@@ -3,6 +3,8 @@ import Navbar from "../includes/Navbar";
 import Footer from "../includes/Footer";
 
 function Jadwal() {
+
+  
   return (
     <div>
       <Navbar />
