@@ -1,23 +1,21 @@
 import React from "react";
 import Navbar from "../includes/Navbar";
 import Footer from "../includes/Footer";
+import { Link, useNavigate } from "react-router-dom";
 
 function About() {
   return (
     <div>
       <Navbar />
-      <section className="bg-white dark:bg-gray-900">
+      <section className="bg-white p-4 ">
         <div className="gap-16 items-center py-8 px-4 mx-auto max-w-screen-xl lg:grid lg:grid-cols-2 lg:py-6 lg:px-6">
-          <div className="font-light text-gray-500 sm:text-lg dark:text-white">
-            <h2 className="mb-4 text-4xl font-extrabold text-gray-900 dark:text-white">
+          <div className="font-light text-gray-500 sm:text-lg ">
+            <h2 className="mb-4 text-4xl font-extrabold text-gray-900 ">
               Teman Penelitian Ilmiah untuk Mahasiswa 📄
             </h2>
             <p className="mb-4">
-              Sumber daya yang mendukung mahasiswa dalam mengembangkan
-              penelitian ilmiah mereka dengan memberikan panduan, informasi, dan
-              bantuan dalam berbagai bidang penelitian, memungkinkan mereka
-              untuk mencapai kesuksesan akademik dan kontribusi yang berharga
-              dalam ilmu pengetahuan
+            Sumber daya yang mendukung mahasiswa dalam mengembangkan penelitian ilmiah mereka dengan memberikan panduan, informasi, dan bantuan dalam berbagai bidang penelitian, memungkinkan mereka untuk mencapai kesuksesan akademik dan
+              kontribusi yang berharga dalam ilmu pengetahuan
             </p>
             <p>
               Merancang, melaksanakan, mempublikasikan penelitian ilmiah, dan
@@ -39,10 +37,10 @@ function About() {
         </div>
       </section>
 
-      <section className="bg-gray-50  dark:bg-gray-800">
+      <section className="bg-white p-4  ">
         <div className="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6">
-          <div className="max-w-screen-lg text-gray-500 sm:text-lg dark:text-white">
-            <h2 className="mb-4 text-4xl font-bold text-gray-900 dark:text-white">
+          <div className="max-w-screen-lg text-gray-500 sm:text-lg">
+            <h2 className="mb-4 text-4xl font-bold text-gray-900">
               Dalam misi mendorong inovasi untuk{" "}
               <span className="font-extrabold">200,000+</span> Penelitian Ilmiah
               📌
@@ -56,9 +54,9 @@ function About() {
               Percepat langkah-langkah penting dalam penelitian, hilangkan
               hambatan, dan kembangkan penelitian dengan mudah
             </p>
+            <Link to='/mentoring'>
             <a
-              href="#"
-              className="inline-flex items-center font-medium text-blue-600 hover:text-blue-800 dark:text-blue-500 dark:hover:text-blue-700"
+              className="inline-flex items-center font-medium text-blue-600 hover:text-blue-800 "
             >
               Cari jadwal gratis
               <svg
@@ -74,9 +72,11 @@ function About() {
                 ></path>
               </svg>
             </a>
+            </Link>
           </div>
         </div>
       </section>
+      
       <Footer />
     </div>
   );

@@ -29,15 +29,15 @@ function Mentoring() {
   return (
     <div>
       <Navbar />
-      <main className="dark:bg-gray-800 bg-white">
+      <main className=" bg-white">
         <div className="mt-7 mb-3 flex">
-          <h3 className="bg-blue-50 font-bold mx-auto text-4xl rounded inline-block bg-contain">
-            Temukan mentor Anda
+          <h3 className=" font-bold mx-auto text-4xl rounded inline-block bg-contain">
+            Temukan mentor Anda 🤗
           </h3>
         </div>
-        <div className="container mx-auto flex flex-wrap justify-start">
+        <div className="flex flex-wrap justify-center py-10">
           {dashboardmentor.map((data, id) => (
-            <div key={id} className="lg:w-96 md:w-1/3 w-1/3 p-4 ">
+            <div key={id} className="lg:w-96 md:w-1/2  w-1/3 p-4">
               <div className="p-8 rounded-xl border-2 bg-gray-50 hover:shadow-lg transition-transform transition-ease-in-out hover:transform hover:scale-[102%] border-gray-200">
                 <h4 className="mb-2 text-lg font-semibold mt-4">
                   {data.namamentor}
@@ -45,7 +45,7 @@ function Mentoring() {
                 <p className="text-base">
                 {batasankata(data.deskripsimentor, 15)}
                 </p>
-                <h3 className="mt-2 text-sm font-medium text-blue-400">
+                <h3 className="mt-2 text-sm font-medium text-blue-700">
                   {data.minatpenelitian}
                 </h3>
 
@@ -53,14 +53,14 @@ function Mentoring() {
                   {data.fee}
                 </p>
 
-                <form className="mt-4 flex flex-col md:flex-row gap-2">
-                <Link to={`/booking`}>
-                  <button className="text-white w-full md:w-1/2 md:ml-1 rounded bg-red-400 p-4 text-sm font-semibold transition hover:scale-105">
+                <form className="mt-4 justify-center md:flex-row gap-2">
+                <Link to={`/booking/${data.id}`}>
+                  <button className="text-blue-700 block mb-4 w-full md:w-1/2 md:ml-1 rounded border-blue-700 border p-4 text-sm font-semibold transition hover:scale-105">
                     Booking
                   </button>
                   </Link>
                   <Link to={`/detailmentor/${data.id}`}>
-                  <button className="text-white block w-full rounded bg-blue-700 p-4 text-sm font-semibold transition ease-in-out hover:scale-105">
+                  <button className="text-white block w-full md:w-1/2 md:ml-1 rounded bg-blue-700 p-4 text-sm font-semibold transition ease-in-out hover:scale-105">
                     Details
                   </button>
                   </Link>

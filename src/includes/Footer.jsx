@@ -4,27 +4,31 @@ import { Link } from "react-router-dom";
 function Footer() {
   return (
     <div>
-       <footer className="p-4 bg-gray-50 sm:p-6 dark:bg-gray-800">
-        <div className="mx-auto max-w-screen-xl">
+       <footer className="bg-blue-700 w-full sm:p-6 ">
+        <div className="mx-auto max-w-screen-xl p-4">
           <div className="md:flex md:justify-between">
             <div className="mb-6 md:mb-0">
               <a href="https://flowbite.com" className="flex items-center">
-                <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">
-                  mentorme
+                <span className="self-center text-2xl font-semibold whitespace-nowrap text-white">
+                  mentorme.
                 </span>
               </a>
             </div>
             <div className="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
               <div>
-                <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">
+              <Link to='/register'>
+                <h2 className="mb-6 text-sm font-semibold text-white uppercase">
                   Mulai Sekarang
                 </h2>
-                <ul className="text-gray-600 dark:text-white">
+                </Link>
+                <ul className="text-white">
+                  <Link to='/login'>
                   <li className="mb-4">
                     <a href="#" className="hover:underline">
                       Login
                     </a>
                   </li>
+                  </Link>
                   <li>
                   <Link to="/dashboardlogin">
                     <a className="hover:underline">
@@ -35,54 +39,61 @@ function Footer() {
                 </ul>
               </div>
               <div>
-                <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">
+                <h2 className="mb-6 text-sm font-semibold text-white uppercase">
                   Cari Mentor
                 </h2>
-                <ul className="text-gray-600 dark:text-white">
+                <ul className="text-white">
+                  <Link to='/mentoring'>
                   <li className="mb-4">
                     <a href="#" className="hover:underline ">
                       Detail Mentor
                     </a>
                   </li>
+                  </Link>
+                  <Link to='/mentoring'>
                   <li>
                     <a href="#" className="hover:underline">
                       Jadwal Mentor
                     </a>
                   </li>
+                  </Link>
                 </ul>
               </div>
               <div>
-                <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">
+                <h2 className="mb-6 text-sm font-semibold text-white uppercase">
                   Mentoring
                 </h2>
-                <ul className="text-gray-600 dark:text-white">
+                <ul className="text-white">
+                <Link to='/mentoring'>
                   <li className="mb-4">
                     <a href="#" className="hover:underline">
-                      Berbayar
+                      Detail Mentor
                     </a>
                   </li>
+                  </Link>
+                  <Link to='/mentoring'>
                   <li>
                     <a href="#" className="hover:underline">
-                      Gratis
+                      Booking
                     </a>
                   </li>
+                  </Link>
                 </ul>
               </div>
             </div>
           </div>
-          <hr className="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
-          <div className="sm:flex sm:items-center sm:justify-between">
-            <span className="text-sm text-gray-500 sm:text-center dark:text-white">
-              © 2023
-              <a href="#" className="hover:underline">
-                mentorme
+          <hr className="my-6 border-gray-200 sm:mx-auto  lg:my-8" />
+          <div className="sm:flex ml-3 sm:items-center sm:justify-between">
+            <span className="text-sm text-white sm:text-center">
+              © 2023 
+              <a href='/' className="hover:underline ml-2">
+                All Rights Reserved.
               </a>
-              . All Rights Reserved.
             </span>
             <div className="flex mt-4 space-x-6 sm:justify-center sm:mt-0">
               <a
                 href="#"
-                className="text-gray-500 hover:text-gray-900 dark:hover:text-white"
+                className="text-white hover:text-gray-900 "
               >
                 <svg
                   className="w-5 h-5"
@@ -99,7 +110,7 @@ function Footer() {
               </a>
               <a
                 href="#"
-                className="text-gray-500 hover:text-gray-900 dark:hover:text-white"
+                className="text-white hover:text-gray-900 "
               >
                 <svg
                   className="w-5 h-5"
@@ -116,7 +127,7 @@ function Footer() {
               </a>
               <a
                 href="#"
-                className="text-gray-500 hover:text-gray-900 dark:hover:text-white"
+                className="text-white hover:text-gray-900 "
               >
                 <svg
                   className="w-5 h-5"

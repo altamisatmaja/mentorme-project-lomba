@@ -1,10 +1,10 @@
 import { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { toast } from "react-toastify";
-import Footer from "../includes/Footer";
-import Navbar from "../includes/Navbar";
+import Navbar from '../includes/Navbar';
+import Footer from '../includes/Footer';
 
-function DashboardRegister() {
+function Register() {
   const [username, usernamechange] = useState("");
   const [nama, namachange] = useState("");
   const [email, emailchange] = useState("");
@@ -12,19 +12,51 @@ function DashboardRegister() {
   
   const navigate = useNavigate();
 
+  const validasi = () => {
+    let isProses = true;
+    let pesanError = 'Masukkan data dong!';
+    if (id == null || id == '') {
+      isProses = false;
+      pesanError += 'Username Anda'
+    }
+    if (username == null || username == '') {
+      isProses = false;
+      pesanError += 'username Anda'
+    }
+    if (email == null || email == '') {
+      isProses = false;
+      pesanError += 'Email Anda'
+    }
+    if (password == null || password == '') {
+      isProses = false;
+      pesanError += 'Password Anda'
+    }
+
+    if (!isProses) {
+      toast.warning(pesanError);
+    }
+    return isProses;
+  }
+
   const handleSubmit = (e) => {
       e.preventDefault();
-      let regobj = {username, nama, email, password};
+      let regobj = {
+        username,
+        nama,
+        email,
+        password
+      };
       console.log(regobj);
-      fetch("http://localhost:8083/akunadmin", {
+      fetch(`http://localhost:8083/akunuser`, {
         method: "POST",
         headers: {'Content-Type': 'application/json'},
         body: JSON.stringify(regobj)
       }). then((res) => {
         alert('Pendaftaran Berhasil')
-        navigate('/dashboardlogin');
+        navigate('/login');
       }). catch((err) => {
-        alert('Gagal')
+        console.log(err.message);
+        toast.error ('Gagal: '+err.message);
       })
   }
 
@@ -35,7 +67,7 @@ function DashboardRegister() {
       <form className='container' onSubmit={handleSubmit}>
         <div className='card-body'>
           <div className='card-header mb-5'>
-            <h1 className='font-Epilogue font-semibold text-3xl'>Halo Admin, Yuk bikin akunmu 🤗</h1>
+            <h1 className='font-Epilogue font-semibold text-3xl'>Yuk, bikin akunmu 🤗</h1>
           </div>
           <div className='card-body'>
             <div className='mb-4'>
@@ -61,7 +93,9 @@ function DashboardRegister() {
           </div>
           <div className='card-footer mt-10'>
             <button type='submit' className='w-full bg-blue-700 h-10 rounded-lg font-semibold text-white'>Bikin akunmu!</button>
-            <p className='text-center mt-2 text-sm'>Sudah punya akun? <Link className='text-blue-700' to={'/dashboardlogin'}>Yuk, login!</Link></p>
+            <div className="">
+            <p className='text-center mt-2 text-sm'>Sudah punya akun? <Link to='/login'><span className='text-blue-700 font-semibold'>Yuk, login!</span></Link></p>
+            </div>
           </div>
         </div>
       </form>
@@ -71,4 +105,4 @@ function DashboardRegister() {
   )
 }
 
-export default DashboardRegister;
+export default Register;

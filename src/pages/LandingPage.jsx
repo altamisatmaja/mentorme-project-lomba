@@ -8,23 +8,21 @@ function LandingPage() {
   return (
     <div className="">
       <Navbar />
-      <div className="p-4">
-      <section className="dark:bg-gray-900">
+      <div className="">
+      <section className="bg-white p-4">
         <div className="grid max-w-screen-xl px-4 py-24 mb-4 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12 md:ml-2">
           <div className="mr-auto place-self-center lg:col-span-7">
-            <h1 className="max-w-2xl md:mt-10 mb-5 text-5xl font-extrabold leading-none md:text-5xl xl:text-6xl dark:text-white">
-              Teman Mentoring Penelitian Ilmiah 🕵️‍♂️
+            <h1 className="max-w-2xl md:mt-10 mb-5 text-5xl font-extrabold leading-none md:text-5xl xl:text-6xl ">
+            Partner Mentoring Penelitian Ilmiah Kamu!🕵️‍♂️
             </h1>
-            <p className="max-w-2xl mb-12 pb-6 font-medium text-black lg:mb-8 md:text-lg lg:text-xl dark:text-white">
-              Dengan panduan dan pengetahuan dari mentor-mentor berpengalaman,
-              jelajahi dan pahami seluk-beluk penelitian ilmiah, tingkatkan
-              kepercayaan diri dalam pengembangan pengetahuan akademik
+            <p className="max-w-2xl mb-2 pb-3 font-medium text-black lg:mb-8 md:text-lg lg:text-xl ">
+            Bersama mentor berpengalaman, asah pengetahuan kamu dalam bidang penelitian dan penulisan ilmiah. Mentoring menyeluruh dari awal hingga publikasi jurnal, dapatkan pengalaman mentorship penelitian ilmiah secara private one-on-one!
             </p>
+            <Link to="/register">
             <a
-              href="#"
-              className=" inline-flex items-center justify-center px-5 py-3 mr-3 text-base font-medium text-center text-white rounded-lg bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-900"
+              className=" inline-flex text-white items-center justify-center px-5 py-3 mr-3 text-base font-medium text-center rounded-lg bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 "
             >
-              <Link to="/daftar">Mulai Sekarang</Link>
+              Mulai Sekarang
               <svg
                 className="w-5 h-5 ml-2 -mr-1"
                 fill="currentColor"
@@ -38,12 +36,15 @@ function LandingPage() {
                 ></path>
               </svg>
             </a>
+            </Link>
+            <Link to="/login">
             <a
               href="#"
-              className="xs:px-2 xs:py-1 inline-flex items-center justify-center px-4 py-2 text-base font-medium text-center text-gray-900 border border-gray-300 rounded-lg hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 dark:text-white dark:border-gray-700 dark:hover:bg-gray-700 dark:focus:ring-gray-800"
+              className="xs:px-2 xs:py-1 inline-flex items-center justify-center px-7 py-3 text-base font-medium text-center text-blue-700 border border-blue-700 rounded-lg hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 "
             >
-              <Link to="/masuk">Login</Link>
+              Login
             </a>
+            </Link>
           </div>
           <div className="hidden lg:mt-0 lg:col-span-5 lg:flex">
             <img src={imgLanding} alt="" />
@@ -51,15 +52,15 @@ function LandingPage() {
         </div>
       </section>
 
-      <section className="bg-white dark:bg-gray-900">
+      <section className="bg-white my-16 p-4">
         <div className="py-8 lg:py-12 mx-auto max-w-screen-xl px-4">
-          <h2 className="mb-8 lg:mb-10 text-xl font-bold tracking-tight leading-tight text-center text-gray-900 dark:text-white md:text-4xl">
+          <h2 className="mb-8 lg:mb-10 text-xl font-bold tracking-tight leading-tight text-center text-gray-900 md:text-4xl">
             Didukung oleh
           </h2>
-          <div className="grid grid-cols-2 gap-8 text-gray-500 sm:gap-12 md:grid-cols-3 lg:grid-cols-6 dark:text-white">
+          <div className="flex flex-wrap justify-center gap-24 text-blue-700 sm:gap-12 md:grid-cols-3 lg:grid-cols-6">
             <a href="#" className="flex justify-center items-center">
               <svg
-                className="h-9 hover:text-gray-900 dark:hover:text-white"
+                className="h-9 hover:text-gray-900"
                 viewBox="0 0 125 35"
                 fill="currentColor"
                 xmlns="http://www.w3.org/2000/svg"
@@ -74,7 +75,7 @@ function LandingPage() {
             </a>
             <a href="#" className="flex justify-center items-center">
               <svg
-                className="h-9 hover:text-gray-900 dark:hover:text-white"
+                className="h-9 hover:text-gray-900 "
                 viewBox="0 0 86 29"
                 fill="currentColor"
                 xmlns="http://www.w3.org/2000/svg"
@@ -89,7 +90,7 @@ function LandingPage() {
             </a>
             <a href="#" className="flex justify-center items-center">
               <svg
-                className="h-8 hover:text-gray-900 dark:hover:text-white"
+                className="h-8 hover:text-gray-900 "
                 viewBox="0 0 151 34"
                 fill="currentColor"
                 xmlns="http://www.w3.org/2000/svg"
@@ -115,7 +116,7 @@ function LandingPage() {
 
             <a href="#" className="flex justify-center items-center">
               <svg
-                className="h-9 hover:text-gray-900 dark:hover:text-white"
+                className="h-9 hover:text-gray-900 "
                 viewBox="0 0 124 38"
                 fill="currentColor"
                 xmlns="http://www.w3.org/2000/svg"
@@ -128,7 +129,7 @@ function LandingPage() {
             </a>
             <a href="#" className="flex justify-center items-center">
               <svg
-                className="h-9 hover:text-gray-900 dark:hover:text-white"
+                className="h-9 hover:text-gray-900 "
                 viewBox="0 0 137 37"
                 fill="currentColor"
                 xmlns="http://www.w3.org/2000/svg"
@@ -209,7 +210,7 @@ function LandingPage() {
             </a>
             <a href="#" className="flex justify-center items-center">
               <svg
-                className="h-6 hover:text-gray-900 dark:hover:text-white"
+                className="h-6 hover:text-gray-900 "
                 viewBox="0 0 124 21"
                 fill="currentColor"
                 xmlns="http://www.w3.org/2000/svg"
@@ -268,23 +269,22 @@ function LandingPage() {
         </div>
       </section>
 
-      <section className="bg-gray-50 dark:bg-gray-800">
+      <section className="bg-white my-16  p-4">
         <div className="py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6">
           <div className="max-w-screen-md mb-8 lg:mb-16">
-            <h2 className="mb-4 text-4xl font-extrabold text-gray-900 dark:text-white">
-              Kami menyediakan layanan terbaik untukmu! 🎓
+            <h2 className="mb-4 text-4xl font-extrabold text-gray-900">
+              Layanan terbaik cuma untuk kamu! 🎓
             </h2>
-            <p className="text-gray-500 sm:text-xl dark:text-white">
-              Bidang penelitian ilmiah sangat luas dan beragam, mencakup
-              berbagai disiplin ilmu dan topik. Disini, mentorme akan membantu
-              kalian dengan beragam disiplin ilmu dan topik penelitian ilmiah
+            <p className="text-gray-500 sm:text-xl">
+            <span className="font-bold">mentorme.</span> beraspirasi untuk bantu kamu dalam mensukseskan penelitian ilmiah kamu!
+                Dengan bidang keilmuan yang begitu luas, mentor-me beradaptasi sesuai kebutuhan agar kamu bisa mendapatkan layanan yang terbaik!
             </p>
           </div>
           <div className="space-y-8 md:grid md:grid-cols-2 lg:grid-cols-3 md:gap-12 md:space-y-0">
             <div>
-              <div className="flex justify-center items-center mb-4 w-10 h-10 rounded-full bg-blue-100 lg:h-12 lg:w-12 dark:bg-blue-900">
+              <div className="flex justify-center items-center mb-4 w-10 h-10 rounded-full bg-blue-100 lg:h-12 lg:w-12">
                 <svg
-                  className="w-5 h-5 text-blue-600 lg:w-6 lg:h-6 dark:text-blue-300"
+                  className="w-5 h-5 text-blue-600 lg:w-6 lg:h-6 "
                   fill="currentColor"
                   viewBox="0 0 20 20"
                   xmlns="http://www.w3.org/2000/svg"
@@ -296,19 +296,19 @@ function LandingPage() {
                   ></path>
                 </svg>
               </div>
-              <h3 className="mb-2 text-xl font-bold dark:text-white">
+              <h3 className="mb-2 text-xl font-bold">
                 Ekonomi 👨‍💼
               </h3>
-              <p className="text-gray-500 dark:text-white">
+              <p className="text-gray-500">
                 Memahami bagaimana keputusan ekonomi dibuat, memprediksi dampak
                 kebijakan ekonomi, serta menganalisis masalah ekonomi yang
                 beragam
               </p>
             </div>
             <div>
-              <div className="flex justify-center items-center mb-4 w-10 h-10 rounded-full bg-blue-100 lg:h-12 lg:w-12 dark:bg-blue-900">
+              <div className="flex justify-center items-center mb-4 w-10 h-10 rounded-full bg-blue-100 lg:h-12 lg:w-12">
                 <svg
-                  className="w-5 h-5 text-blue-600 lg:w-6 lg:h-6 dark:text-blue-300"
+                  className="w-5 h-5 text-blue-600 lg:w-6 lg:h-6 "
                   fill="currentColor"
                   viewBox="0 0 20 20"
                   xmlns="http://www.w3.org/2000/svg"
@@ -316,18 +316,18 @@ function LandingPage() {
                   <path d="M10.394 2.08a1 1 0 00-.788 0l-7 3a1 1 0 000 1.84L5.25 8.051a.999.999 0 01.356-.257l4-1.714a1 1 0 11.788 1.838L7.667 9.088l1.94.831a1 1 0 00.787 0l7-3a1 1 0 000-1.838l-7-3zM3.31 9.397L5 10.12v4.102a8.969 8.969 0 00-1.05-.174 1 1 0 01-.89-.89 11.115 11.115 0 01.25-3.762zM9.3 16.573A9.026 9.026 0 007 14.935v-3.957l1.818.78a3 3 0 002.364 0l5.508-2.361a11.026 11.026 0 01.25 3.762 1 1 0 01-.89.89 8.968 8.968 0 00-5.35 2.524 1 1 0 01-1.4 0zM6 18a1 1 0 001-1v-2.065a8.935 8.935 0 00-2-.712V17a1 1 0 001 1z"></path>
                 </svg>
               </div>
-              <h3 className="mb-2 text-xl font-bold dark:text-white">
+              <h3 className="mb-2 text-xl font-bold">
                 Pendidikan 👨‍🏫
               </h3>
-              <p className="text-gray-500 dark:text-white">
+              <p className="text-gray-500">
                 Meningkatkan metode pengajaran, meningkatkan pemahaman tentang
                 efektivitas sistem pendidikan, dan meningkatkan hasil pendidika
               </p>
             </div>
             <div>
-              <div className="flex justify-center items-center mb-4 w-10 h-10 rounded-full bg-blue-100 lg:h-12 lg:w-12 dark:bg-blue-900">
+              <div className="flex justify-center items-center mb-4 w-10 h-10 rounded-full bg-blue-100 lg:h-12 lg:w-12">
                 <svg
-                  className="w-5 h-5 text-blue-600 lg:w-6 lg:h-6 dark:text-blue-300"
+                  className="w-5 h-5 text-blue-600 lg:w-6 lg:h-6 "
                   fill="currentColor"
                   viewBox="0 0 20 20"
                   xmlns="http://www.w3.org/2000/svg"
@@ -340,19 +340,19 @@ function LandingPage() {
                   <path d="M2 13.692V16a2 2 0 002 2h12a2 2 0 002-2v-2.308A24.974 24.974 0 0110 15c-2.796 0-5.487-.46-8-1.308z"></path>
                 </svg>
               </div>
-              <h3 className="mb-2 text-xl font-bold dark:text-white">
+              <h3 className="mb-2 text-xl font-bold">
                 Ilmu Komputer 🧑🏻‍💻
               </h3>
-              <p className="text-gray-500 dark:text-white">
+              <p className="text-gray-500">
                 Ilmu komputer berkontribusi pada perkembangan teknologi,
                 perangkat lunak, dan sistem informasi yang kita gunakan dalam
                 berbagai aspek kehidupan sehari-hari
               </p>
             </div>
             <div>
-              <div className="flex justify-center items-center mb-4 w-10 h-10 rounded-full bg-blue-100 lg:h-12 lg:w-12 dark:bg-blue-900">
+              <div className="flex justify-center items-center mb-4 w-10 h-10 rounded-full bg-blue-100 lg:h-12 lg:w-12">
                 <svg
-                  className="w-5 h-5 text-blue-600 lg:w-6 lg:h-6 dark:text-blue-300"
+                  className="w-5 h-5 text-blue-600 lg:w-6 lg:h-6 "
                   fill="currentColor"
                   viewBox="0 0 20 20"
                   xmlns="http://www.w3.org/2000/svg"
@@ -365,19 +365,19 @@ function LandingPage() {
                   ></path>
                 </svg>
               </div>
-              <h3 className="mb-2 text-xl font-bold dark:text-white">
+              <h3 className="mb-2 text-xl font-bold">
                 Psikologi 👩‍💼
               </h3>
-              <p className="text-gray-500 dark:text-white">
+              <p className="text-gray-500">
                 Mengembangkan pengetahuan tentang perilaku manusia serta
                 memberikan wawasan yang dapat digunakan untuk meningkatkan
                 kualitas hidup dan kesejahteraan individu
               </p>
             </div>
             <div>
-              <div className="flex justify-center items-center mb-4 w-10 h-10 rounded-full bg-blue-100 lg:h-12 lg:w-12 dark:bg-blue-900">
+              <div className="flex justify-center items-center mb-4 w-10 h-10 rounded-full bg-blue-100 lg:h-12 lg:w-12">
                 <svg
-                  className="w-5 h-5 text-blue-600 lg:w-6 lg:h-6 dark:text-blue-300"
+                  className="w-5 h-5 text-blue-600 lg:w-6 lg:h-6 "
                   fill="currentColor"
                   viewBox="0 0 20 20"
                   xmlns="http://www.w3.org/2000/svg"
@@ -385,19 +385,19 @@ function LandingPage() {
                   <path d="M7 3a1 1 0 000 2h6a1 1 0 100-2H7zM4 7a1 1 0 011-1h10a1 1 0 110 2H5a1 1 0 01-1-1zM2 11a2 2 0 012-2h12a2 2 0 012 2v4a2 2 0 01-2 2H4a2 2 0 01-2-2v-4z"></path>
                 </svg>
               </div>
-              <h3 className="mb-2 text-xl font-bold dark:text-white">
+              <h3 className="mb-2 text-xl font-bold">
                 Kedokteran 👩‍⚕️
               </h3>
-              <p className="text-gray-500 dark:text-white">
+              <p className="text-gray-500">
                 Meningkatkan pemahaman kita tentang kondisi kesehatan,
                 mengembangkan terapi yang lebih efektif, serta memajukan praktek
                 medis dan perawatan pasien
               </p>
             </div>
             <div>
-              <div className="flex justify-center items-center mb-4 w-10 h-10 rounded-full bg-blue-100 lg:h-12 lg:w-12 dark:bg-blue-900">
+              <div className="flex justify-center items-center mb-4 w-10 h-10 rounded-full bg-blue-100 lg:h-12 lg:w-12">
                 <svg
-                  className="w-5 h-5 text-blue-600 lg:w-6 lg:h-6 dark:text-blue-300"
+                  className="w-5 h-5 text-blue-600 lg:w-6 lg:h-6 "
                   fill="currentColor"
                   viewBox="0 0 20 20"
                   xmlns="http://www.w3.org/2000/svg"
@@ -409,10 +409,10 @@ function LandingPage() {
                   ></path>
                 </svg>
               </div>
-              <h3 className="mb-2 text-xl font-bold dark:text-white">
+              <h3 className="mb-2 text-xl font-bold">
                 Teknik 👷
               </h3>
-              <p className="text-gray-500 dark:text-white">
+              <p className="text-gray-500">
                 Meningkatkan teknologi yang ada, menciptakan inovasi baru, dan
                 mengoptimalkan proses teknis untuk mencapai hasil yang lebih
                 efisien dan efektif
@@ -422,22 +422,16 @@ function LandingPage() {
         </div>
       </section>
 
-      <section className="bg-white dark:bg-gray-900">
+      <section className="bg-white my-16 p-4">
         <div className="gap-16 items-center py-8 px-4 mx-auto max-w-screen-xl lg:grid lg:grid-cols-2 lg:py-16 lg:px-6">
-          <div className="font-light text-gray-500 sm:text-lg dark:text-white">
-            <h2 className="mb-4 text-4xl font-extrabold text-gray-900 dark:text-white">
-              Teman Penelitian Ilmiah untuk Mahasiswa 📄
+          <div className="font-light text-gray-500 sm:text-lg">
+            <h2 className="mb-4 text-4xl font-extrabold text-gray-900">
+              Your Go To Scientific Research Mentorship Site! 📄
             </h2>
             <p className="mb-4">
-              Sumber daya yang mendukung mahasiswa dalam mengembangkan
-              penelitian ilmiah mereka dengan memberikan panduan, informasi, dan
-              bantuan dalam berbagai bidang penelitian, memungkinkan mereka
-              untuk mencapai kesuksesan akademik dan kontribusi yang berharga
-              dalam ilmu pengetahuan
-            </p>
-            <p>
-              Merancang, melaksanakan, mempublikasikan penelitian ilmiah, dan
-              mendukung pencapaian kesuksesan akademik
+            Platform mentorme menyuguhkan opsi bagi kamu yang kesulitan dalam melakukan penelitian ilmiah dalam suatu bidang spesifik. Dapatkan bimbingan mentorship one-on-one dengan ahli dalam bidang keilmuan dan penelitian ilmiah.
+                Ciptakan inovasi yang dapat berdampak tinggi ke masyarakat dunia.
+                Rancang, bangun, laksanakan, dan publikasi karya ilmiah kamu, biarkan dunia tau!
             </p>
           </div>
           <div className="grid grid-cols-2 gap-4 mt-8">
@@ -455,26 +449,21 @@ function LandingPage() {
         </div>
       </section>
 
-      <section className="bg-gray-50  dark:bg-gray-800">
+      <section className="bg-white my-16  p-4">
         <div className="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6">
-          <div className="max-w-screen-lg text-gray-500 sm:text-lg dark:text-white">
-            <h2 className="mb-4 text-4xl font-bold text-gray-900 dark:text-white">
-              Dalam misi mendorong inovasi untuk{" "}
-              <span className="font-extrabold">200,000+</span> Penelitian Ilmiah
-              📌
+          <div className="max-w-screen-lg text-gray-500 sm:text-lg">
+            <h2 className="mb-4 text-4xl font-bold text-gray-900">
+            Dalam misi mendorong inovasi mahasiswa untuk <span className="font-extrabold"> 200,000+</span> Karya Ilmiah 📌
             </h2>
             <p className="mb-4 font-light">
-              Bersama mentorme yang mendukung pengguna dalam membuat penelitian
-              ilmiah. Kumpulkan informasi penting dan hubungkan sumber daya dari
-              berbagai alat penelitian untuk mempermudah pengembangan penelitian
+            <span className="font-bold">mentorme.</span> mendukung kamu dalam menulis karya ilmiah terbaik. Bersama sumber daya mentor terbaik yang siap membantu kamu
             </p>
             <p className="mb-4 font-medium">
-              Percepat langkah-langkah penting dalam penelitian, hilangkan
-              hambatan, dan kembangkan penelitian dengan mudah
+            Ketahui langkah-langkah penting dalam penelitian, hilangkan hambatan, dan kembangkan penelitian dengan mudah
             </p>
             <a
               href="#"
-              className="inline-flex items-center font-medium text-blue-600 hover:text-blue-800 dark:text-blue-500 dark:hover:text-blue-700"
+              className="inline-flex items-center font-medium text-blue-600 hover:text-blue-800 "
             >
               Cari jadwal gratis
               <svg
@@ -494,160 +483,87 @@ function LandingPage() {
         </div>
       </section>
 
-      <div class="max-w-screen-xl w-full mx-auto px-5 bg-white min-h-sceen">
-      <div class="flex flex-col items-center w-full">
-        <h2 class="font-bold text-5xl mt-5 tracking-tight">
-          FAQ
-        </h2>
-        <p class="text-neutral-500 text-xl mt-3">
-          Frequenty asked questions
-        </p>
-      </div>
-      <div class="grid divide-y divide-neutral-200 w-5/6 px-2 mx-auto mt-8">
-        <div class="py-5">
-          <details class="group">
-            <summary class="flex justify-between items-center font-medium cursor-pointer list-none">
-              <span> What is a SAAS platform?</span>
-              <span class="transition group-open:rotate-180">
-                    <svg fill="none" height="24" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path>
-    </svg>
+      <div class="max-w-screen-xl w-full mx-auto pb-10 bg-white min-h-sceen">
+          <div class="flex flex-col items-center w-full">
+            <h2 class="font-bold text-5xl mt-5 tracking-tight">FAQ</h2>
+            <p class="text-neutral-500 text-xl mt-3">Frequenty asked questions</p>
+          </div>
+          <div class="grid divide-y divide-neutral-200 w-5/6 px-2 mx-auto mt-8">
+            <div class="py-5">
+              <details class="group">
+                <summary class="flex justify-between items-center font-medium cursor-pointer list-none">
+                  <span> Apa yang mentorme tawarkan?</span>
+                  <span class="transition group-open:rotate-180">
+                    <svg fill="none" height="24" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="24">
+                      <path d="M6 9l6 6 6-6"></path>
+                    </svg>
                   </span>
-            </summary>
-            <p class="text-neutral-600 mt-3 group-open:animate-fadeIn">
-              SAAS platform is a cloud-based software service that allows users to access
-              and use a variety of tools and functionality.
-            </p>
-          </details>
-        </div>
-        <div class="py-5">
-          <details class="group">
-            <summary class="flex justify-between items-center font-medium cursor-pointer list-none">
-              <span> How does  billing work?</span>
-              <span class="transition group-open:rotate-180">
-                    <svg fill="none" height="24" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path>
-    </svg>
+                </summary>
+                <p class="text-neutral-600 mt-3 group-open:animate-fadeIn">mentorme menawarkan mentorship one-on-one yang dapat membantu kamu dalam melakukan penelitian ilmiah sesuai dengan kaidah yang baik dan benar.</p>
+              </details>
+            </div>
+            <div class="py-5">
+              <details class="group">
+                <summary class="flex justify-between items-center font-medium cursor-pointer list-none">
+                  <span> Bagaimana cara mentoring di mentorme? </span>
+                  <span class="transition group-open:rotate-180">
+                    <svg fill="none" height="24" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="24">
+                      <path d="M6 9l6 6 6-6"></path>
+                    </svg>
                   </span>
-            </summary>
-            <p class="text-neutral-600 mt-3 group-open:animate-fadeIn">
-              We offers a variety of billing options, including monthly and annual subscription plans,
-              as well as pay-as-you-go pricing for certain services. Payment is typically made through a credit
-              card or other secure online payment method.
-            </p>
-          </details>
-        </div>
-        <div class="py-5">
-          <details class="group">
-            <summary class="flex justify-between items-center font-medium cursor-pointer list-none">
-              <span> Can I get a refund for my subscription?</span>
-              <span class="transition group-open:rotate-180">
-                    <svg fill="none" height="24" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path>
-    </svg>
+                </summary>
+                <p class="text-neutral-600 mt-3 group-open:animate-fadeIn">
+                  mentorme menawarkan berbagai pilihan mentor sesuai dengan kebutuhan kamu. Mentor dari berbagai bidang, yang juga terampil dalam melakukan penelitian dan penulisan ilmiah. Pilih sesuai kebutuhanmmu. Booking jadwal bersama
+                  mentor, lakukan pembayaran, lalu akan muncul invoice beserta dengan link zoom untuk kamu melakukan sesi mentorship.
+                </p>
+              </details>
+            </div>
+            <div class="py-5">
+              <details class="group">
+                <summary class="flex justify-between items-center font-medium cursor-pointer list-none">
+                  <span> Apakah bisa mengajukan refund?</span>
+                  <span class="transition group-open:rotate-180">
+                    <svg fill="none" height="24" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="24">
+                      <path d="M6 9l6 6 6-6"></path>
+                    </svg>
                   </span>
-            </summary>
-            <p class="text-neutral-600 mt-3 group-open:animate-fadeIn">
-              We offers a 30-day money-back guarantee for most of its subscription plans. If you are not
-              satisfied with your subscription within the first 30 days, you can request a full refund. Refunds
-              for subscriptions that have been active for longer than 30 days may be considered on a case-by-case
-              basis.
-            </p>
-          </details>
-        </div>
-        <div class="py-5">
-          <details class="group">
-            <summary class="flex justify-between items-center font-medium cursor-pointer list-none">
-              <span> How do I cancel my subscription?</span>
-              <span class="transition group-open:rotate-180">
-                    <svg fill="none" height="24" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path>
-    </svg>
+                </summary>
+                <p class="text-neutral-600 mt-3 group-open:animate-fadeIn">
+                  Kami menawarkan jaminan uang kembali selama 30 hari untuk sebagian besar paket langganan kami. Jika Anda tidak puas dengan langganan Anda dalam 30 hari pertama, Anda dapat meminta pengembalian dana penuh. Pengembalian dana
+                  untuk langganan yang telah aktif selama lebih dari 30 hari mungkin akan dipertimbangkan secara individual.
+                </p>
+              </details>
+            </div>
+            <div class="py-5">
+              <details class="group">
+                <summary class="flex justify-between items-center font-medium cursor-pointer list-none">
+                  <span> Bagaimana kualitas para mentor di mentorme?</span>
+                  <span class="transition group-open:rotate-180">
+                    <svg fill="none" height="24" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="24">
+                      <path d="M6 9l6 6 6-6"></path>
+                    </svg>
                   </span>
-            </summary>
-            <p class="text-neutral-600 mt-3 group-open:animate-fadeIn">
-              To cancel your We subscription, you can log in to your account and navigate to the
-              subscription management page. From there, you should be able to cancel your subscription and stop
-              future billing.
-            </p>
-          </details>
-        </div>
-        <div class="py-5">
-          <details class="group">
-            <summary class="flex justify-between items-center font-medium cursor-pointer list-none">
-              <span> Can I try this platform for free?</span>
-              <span class="transition group-open:rotate-180">
-                    <svg fill="none" height="24" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path>
-    </svg>
+                </summary>
+                <p class="text-neutral-600 mt-3 group-open:animate-fadeIn">
+                  Para mentor di mentorme semuanya memiliki latar belakang pendidikan atau pun sertifikasi yang berkualitas sehingga dapat memberikan ilmu yang baik bagi para mentee
+                </p>
+              </details>
+            </div>
+            <div class="py-5 mb-8">
+              <details class="group">
+                <summary class="flex justify-between items-center font-medium cursor-pointer list-none">
+                  <span> Dapatkah saya mendapat sesi mentoring gratis?</span>
+                  <span class="transition group-open:rotate-180">
+                    <svg fill="none" height="24" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="24">
+                      <path d="M6 9l6 6 6-6"></path>
+                    </svg>
                   </span>
-            </summary>
-            <p class="text-neutral-600 mt-3 group-open:animate-fadeIn">
-              We offers a free trial of its  platform for a limited time. During the trial period,
-              you will have access to a limited set of features and functionality, but you will not be charged.
-            </p>
-          </details>
+                </summary>
+                <p class="text-neutral-600 mt-3 group-open:animate-fadeIn">Dalam pengembangan mentorme nantinya akan memberikan tawaran menarik seperti potongan fee mentoring atau bahkan biaya mentoring gratis</p>
+              </details>
+            </div>
+          </div>
         </div>
-        <div class="py-5">
-          <details class="group">
-            <summary class="flex justify-between items-center font-medium cursor-pointer list-none">
-              <span> How do I access   documentation?</span>
-              <span class="transition group-open:rotate-180">
-                    <svg fill="none" height="24" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path>
-    </svg>
-                  </span>
-            </summary>
-            <p class="text-neutral-600 mt-3 group-open:animate-fadeIn">
-                Documentation is available on the company's website and can be accessed by
-              logging in to your account. The documentation provides detailed information on how to use the ,
-              as well as code examples and other resources.
-            </p>
-          </details>
-        </div>
-        <div class="py-5">
-          <details class="group">
-            <summary class="flex justify-between items-center font-medium cursor-pointer list-none">
-              <span> How do I contact support?</span>
-              <span class="transition group-open:rotate-180">
-                    <svg fill="none" height="24" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path>
-    </svg>
-                  </span>
-            </summary>
-            <p class="text-neutral-600 mt-3 group-open:animate-fadeIn">
-              If you need help with the platform or have any other questions, you can contact the
-              company's support team by submitting a support request through the website or by emailing
-              support@We.com.
-            </p>
-          </details>
-        </div>
-        <div class="py-5">
-          <details class="group">
-            <summary class="flex justify-between items-center font-medium cursor-pointer list-none">
-              <span> Do you offer any discounts or promotions?</span>
-              <span class="transition group-open:rotate-180">
-                    <svg fill="none" height="24" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path>
-    </svg>
-                  </span>
-            </summary>
-            <p class="text-neutral-600 mt-3 group-open:animate-fadeIn">
-              We may offer discounts or promotions from time to time. To stay up-to-date on the latest
-              deals and special offers, you can sign up for the company's newsletter or follow it on social media.
-            </p>
-          </details>
-        </div>
-        <div class="py-5">
-          <details class="group">
-            <summary class="flex justify-between items-center font-medium cursor-pointer list-none">
-              <span> How do we compare to other similar services?</span>
-              <span class="transition group-open:rotate-180">
-                    <svg fill="none" height="24" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path>
-    </svg>
-                  </span>
-            </summary>
-            <p class="text-neutral-600 mt-3 group-open:animate-fadeIn">
-              This platform is a highly reliable and feature-rich service that offers a wide range
-              of tools and functionality. It is competitively priced and offers a variety of billing options to
-              suit different needs and budgets.
-            </p>
-          </details>
-        </div>
-      </div>
-    </div>
     <Footer/>
       </div>
     </div>

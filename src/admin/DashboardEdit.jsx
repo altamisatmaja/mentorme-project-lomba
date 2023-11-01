@@ -46,7 +46,7 @@ function Edit() {
   return (
     <div className='w-full mt-10'>
       <div className='px-2'>
-        <h1 className='text-center font-Epilogue text-4xl font-bold'>Edit Data Keuangan</h1>
+        <h1 className='text-center font-Epilogue text-4xl font-bold'>Edit Data Mentor</h1>
       </div>
       <div className='w-1/2 mt-10 mx-auto justify-center px-10 py-5 rounded-xl bg-slate-100 shadow-lg mb-10'>
         <form action="" onSubmit={handleSubmit}>

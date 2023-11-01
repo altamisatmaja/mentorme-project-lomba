@@ -9,10 +9,10 @@ import Jadwal from '/src/pages/Jadwal';
 import LandingPage from './pages/LandingPage';
 import Mentoring from './pages/Mentoring';
 import About from './pages/About';
-import Masuk from './auth/Masuk';
-import Daftar from './auth/Daftar';
 import DetailMentor from './pages/DetailMentor';
 import Booking from './pages/Booking';
+import Login from './auth/Login';
+import Register from './auth/Register';
 
 function App() {
   return (
@@ -23,14 +23,14 @@ function App() {
         <Route path="/mentoring" element={ <Mentoring/> } />
         <Route path="/jadwal" element={ <Jadwal/> } />
         <Route path="/about" element={ <About/> } />
-        <Route path="/masuk" element={ <Masuk/> } />
-        <Route path="/daftar" element={ <Daftar/> } />
         <Route path="/edit/:id" element={ <DashboardEdit/> } />
         <Route path="/dashboardadmin" element={ <DashboardAdmin/> } />
         <Route path="/dashboardlogin/" element={ <DashboardLogin/> } />
+        <Route path="/login/" element={ <Login/> } />
         <Route path="/dashboardregister/" element={ <DashboardRegister/> } />
+        <Route path="/register/" element={ <Register/> } />
         <Route path="/detailmentor/:id" element={ <DetailMentor/> } />
-        <Route path="/booking" element={ <Booking/> } />
+        <Route path="/booking/:id" element={ <Booking/> } />
       </Routes>
     </div>
   )

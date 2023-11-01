@@ -7,43 +7,29 @@ function Navbar() {
   const toggleDropdown = () => {
     setIsDropdownOpen(!isDropdownOpen);
   };
-  
+
   return (
-    <nav className="bg-blue-600 border-gray-200 px-6 py-6 dark:bg-gray-800">
+    <nav className="bg-blue-700 border-gray-200 px-6 py-4 ">
       <div className="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl">
-        <a href="#" className="flex items-center">
-          <span className="self-center text-xl sm:text-3xl font-bold whitespace-nowrap text-white dark:text-white">
-            mentor-me
-          </span>
+      <Link to="/">
+        <a className="flex items-center">
+          <span className="self-center text-xl sm:text-3xl font-bold whitespace-nowrap text-white ">mentorme.</span>
         </a>
-        <div className="flex items-center">
+        </Link>
+        <div className="md:hidden justify-center ml-28 sm:ml-28 flex items-center">
           <button
             onClick={toggleDropdown}
             data-collapse-toggle="mobile-menu-2"
             type="button"
-            className="inline-flex items-center p-2 ml-1 text-sm rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-white dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+            className="inline-flex ml-10 p-2 text-sm rounded-lg lg:hidden bg-gray-100 focus:outline-none focus:ring-2 focus:ring-white  "
             aria-controls="mobile-menu-2"
             aria-expanded="false"
           >
             <span className="sr-only">Buka main menu</span>
-            <svg
-              className="w-6 h-6"
-              fill="currentColor"
-              viewBox="0 0 20 20"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                fill-rule="evenodd"
-                d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
-                clip-rule="evenodd"
-              ></path>
+            <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path>
             </svg>
-            <svg
-              className="hidden w-6 h-6"
-              fill="currentColor"
-              viewBox="0 0 20 20"
-              xmlns="http://www.w3.org/2000/svg"
-            >
+            <svg className="hidden w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
               <path
                 fill-rule="evenodd"
                 d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
@@ -52,68 +38,77 @@ function Navbar() {
             </svg>
           </button>
         </div>
-        <div
-          className="justify-between items-center"
-          id="mobile-menu-2"
-        >
-          <ul className="flex flex-col mt-4 font-medium lg:flex-row lg:space-x-8 lg:mt-0">
+        <div className="justify-between items-center" id="mobile-menu-2">
+          <ul className="hidden md:flex flex-col md:flex-row font-medium lg:flex-row lg:space-x-8 lg:mt-0">
+          <Link to="/">
             <li>
               <a
-                className="block py-2 pr-4 pl-3 text-white lg:hover:text-blue-700 rounded lg:bg-transparent lg:p-0 dark:text-white"
+                className="block p-2 text-white  border-gray-100 rounded-md hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-blue-700 lg:p-0  "
                 aria-current="page"
               >
-                <Link to="/">Beranda</Link>
+                Beranda
               </a>
             </li>
+            </Link>
+            <Link to="/about">
             <li>
               <a
-                href="#"
-                className="block py-2 pr-4 pl-3 text-white  border-gray-100 rounded-md hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-blue-700 lg:p-0 dark:text-white lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700"
+                
+                className="block p-2 text-white  border-gray-100 rounded-md hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-blue-700 lg:p-0  "
               >
-                <Link to="/about">Tentang Kami</Link>
+                Tentang Kami
               </a>
             </li>
+            </Link>
+            <Link to="/jadwal">
             <li>
               <a
-                href="#"
-                className="block py-2 pr-4 pl-3 text-white border-gray-100 rounded-md hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-blue-700 lg:p-0 dark:text-white lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700"
+                
+                className="block p-2 text-white border-gray-100 rounded-md hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-blue-700 lg:p-0  "
               >
-                <Link to="/jadwal">Jadwal</Link>
+                Jadwal
               </a>
             </li>
+            </Link>
+            <Link to="/mentoring">
             <li>
               <a
-                href="#"
-                className="block py-2 pr-4 pl-3 text-white  border-gray-100 rounded-md hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-blue-700 lg:p-0 dark:text-white lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700"
+                
+                className="block p-2 text-white  border-gray-100 rounded-md hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-blue-700 lg:p-0  "
               >
-                <Link to="/mentoring">Cari Mentor</Link>
+                Cari Mentor
               </a>
             </li>
+            </Link>
+            <Link to="/login">
             <li>
-            <a className="hidden hover:text-black text-white md:block dark:text-white hover:bg-gray-50 focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 dark:hover:bg-gray-700 focus:outline-none dark:focus:ring-gray-800 border-gray-300 dark:border-gray-300 dark:border-solid-2 dark:hover:border-gray-800 border-solid-2 border">
-            <Link to="/masuk">Login</Link>
-          </a>
+              <a className="hidden hover:text-blue-700 mt-1 text-white md:block  hover:bg-gray-50 focus:ring-4 transition hover:scale-[106%] focus:ring-gray-300 font-medium ml-16 rounded-lg text-sm px-5 pl-5 py-1  focus:outline-none  border-gray-300  border-solid-2 border">
+                Login
+              </a>
             </li>
+            </Link>
+            <Link to="/register">
             <li>
-            <a className="text-white hidden md:block bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">
-            <Link to="/daftar">Mulai Sekarang</Link>
-          </a>
+              <a className="text-blue-700 hidden md:block mt-1 bg-white hover:bg-white focus:ring-4 transition hover:scale-[103%] focus:ring-gray-300 hover:text-blue-700 font-medium rounded-lg text-sm px-5 py-1.5 mb-2 mr-2  focus:outline-none ">
+                Mulai Sekarang
+              </a>
             </li>
+            </Link>
           </ul>
         </div>
       </div>
       {isDropdownOpen && (
-        <ul className="dark:text-white md:hidden flex flex-col p-5 list-none ml-3">
-          <li className="mb-5" href="#">
+        <ul className=" text-white md:hidden flex flex-col p-5 list-none ml-3">
+          <li className="mb-5" >
             <Link to="/">Beranda</Link>
           </li>
-          <li className="mb-5" href="#">
+          <li className="mb-5" >
             <Link to="/about">Tentang Kami</Link>
           </li>
-          <li className="mb-5" href="#">
+          <li className="mb-5" >
             <Link to="/jadwal">Jadwal</Link>
           </li>
-          <li className="mb-5" href="#">
+          <li className="mb-5" >
             <Link to="/mentoring">Cari Mentor</Link>
           </li>
           <li>

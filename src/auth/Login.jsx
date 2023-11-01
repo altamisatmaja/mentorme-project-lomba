@@ -5,7 +5,7 @@ import { toast } from "react-toastify";
 import Navbar from '../includes/Navbar';
 import Footer from '../includes/Footer';
 
-function DashboardLogin() {
+function Login() {
   const [token, setToken] = useState('');
 
   const [username, usernameupdate] = useState('');
@@ -17,13 +17,13 @@ function DashboardLogin() {
     e.preventDefault();
     
     if (validasi()) {
-      fetch("http://localhost:8083/akunadmin/" + username).then((res) => {
+      fetch(`http://localhost:8083/akunuser/${username}`).then((res) => {
         console.log("Database Password:", res.password);
         console.log("Entered Password:", password);
         return res.json();
       }).then((resp) => {
-        alert('Selamt datang admin, anda berhasil masuk!')
-        usenavigate('/dashboardadmin');
+        alert(`Selamt datang ${username}, anda berhasil masuk!`)
+        usenavigate('/jadwal');
       }).catch((err) => {
         toast.error('Login Failed due to :' + err.message);
       }); 
@@ -46,12 +46,12 @@ function DashboardLogin() {
 
   return (
     <div>
-    <Navbar/>
+      <Navbar/>
     <div className=' w-1/2 mx-auto p-5 mt-10 mb-10 rounded-xl shadow-xl'>
       <form className='container' onSubmit={prosesLogin} >
         <div className='card-body'>
           <div className='card-header mb-5'>
-            <h1 className='font-Epilogue font-semibold text-3xl'>Halo Admin, Yuk login 😁</h1>
+            <h1 className='font-Epilogue font-semibold text-3xl'>Halo, Yuk login 😁</h1>
           </div>
           <div className='card-body'>
             <div className='mb-4'>
@@ -67,9 +67,9 @@ function DashboardLogin() {
             </div>
           </div>
           <div className='card-footer mt-10'>
-          <button type='submit' className='w-full bg-blue-700 h-10 rounded-lg font-semibold text-white'>Login</button>
+            <button type='submit' className='w-full bg-blue-700 h-10 rounded-lg font-semibold text-white'>Login</button>
           <div className='flex justify-center p-5'>
-            <p className='text-blue-500 font-medium'>Belum Punya Akun? <Link to='/dashboardregister'><a className='font-semibold'>Yuk Daftar! 🥶</a></Link></p>
+            <p className='text-center mt-2 text-sm'>Belum Punya Akun? <Link to='/register'><a className='font-semibold text-blue-700'>Yuk Daftar! 🥶</a></Link></p>
           </div>
           </div>
         </div>
@@ -80,4 +80,4 @@ function DashboardLogin() {
   )
 }
 
-export default DashboardLogin
+export default Login
