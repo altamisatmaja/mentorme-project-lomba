@@ -113,7 +113,7 @@ function Navbar() {
           </li>
           <li>
             <button className="text-white border px-4 bg-blue-700 rounded-md">
-              <Link to="/masuk">Login</Link>
+              <Link to="/login">Login</Link>
             </button>
           </li>
         </ul>

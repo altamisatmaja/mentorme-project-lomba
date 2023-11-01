@@ -30,14 +30,14 @@ function Mentoring() {
     <div>
       <Navbar />
       <main className=" bg-white">
-        <div className="mt-7 mb-3 flex">
+        <div className="mt-7 mb-3 flex p-6">
           <h3 className=" font-bold mx-auto text-4xl rounded inline-block bg-contain">
             Temukan mentor Anda 🤗
           </h3>
         </div>
         <div className="flex flex-wrap justify-center py-10">
           {dashboardmentor.map((data, id) => (
-            <div key={id} className="lg:w-96 md:w-1/2  w-1/3 p-4">
+            <div key={id} className="lg:w-96 md:w-1/2 sm:w-full xs:w-full w-1/3 p-4">
               <div className="p-8 rounded-xl border-2 bg-gray-50 hover:shadow-lg transition-transform transition-ease-in-out hover:transform hover:scale-[102%] border-gray-200">
                 <h4 className="mb-2 text-lg font-semibold mt-4">
                   {data.namamentor}

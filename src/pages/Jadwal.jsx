@@ -46,7 +46,7 @@ function Jadwal() {
                 <h1 className="font-semibold">Fee Mentoring : </h1>
                 <h3>{data.fee}</h3>
               </div>
-              <div className="md:w-1/4 items-center md:mr-3 flex justify-end ">
+              <div className="md:w-1/4 xs:mt-3 items-center md:mr-3 flex justify-end ">
               <a href={data.tempat} target="_blank">
                 <button className="bg-blue-700 h-[6.6rem] -mt-2 text-white hover:bg-blue-800 font-semibold p-2 rounded">
                   Tautan Zoom

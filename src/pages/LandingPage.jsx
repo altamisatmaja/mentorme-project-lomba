@@ -10,7 +10,7 @@ function LandingPage() {
       <Navbar />
       <div className="">
       <section className="bg-white p-4">
-        <div className="grid max-w-screen-xl px-4 py-24 mb-4 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12 md:ml-2">
+        <div className="grid max-w-screen-xl px-4 py-20 mb-4 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12 md:ml-2">
           <div className="mr-auto place-self-center lg:col-span-7">
             <h1 className="max-w-2xl md:mt-10 mb-5 text-5xl font-extrabold leading-none md:text-5xl xl:text-6xl ">
             Partner Mentoring Penelitian Ilmiah Kamu!🕵️‍♂️

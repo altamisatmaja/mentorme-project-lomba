@@ -5,7 +5,7 @@ function Footer() {
   return (
     <div>
        <footer className="bg-blue-700 w-full sm:p-6 ">
-        <div className="mx-auto max-w-screen-xl p-4">
+        <div className="mx-auto max-w-screen-xl p-6">
           <div className="md:flex md:justify-between">
             <div className="mb-6 md:mb-0">
               <a href="https://flowbite.com" className="flex items-center">
