@@ -376,15 +376,6 @@ function DashboardAdmin() {
                         </div>
                         </td>
                         <td className="px-6 py-4">
-                        <Link to={`/dashboardjadwal/${data.id}`}>
-                        <div className="flex gap-2">
-                            <span
-                            className="inline-flex items-center gap-1 rounded-lg  border border-blue-700 px-2 py-2 mb-2 text-xs font-semibold text-blue-700"
-                            >
-                            Tambah Jadwal
-                            </span>
-                        </div>
-                        </Link>
                         <div className="flex gap-4">
                             <button onClick={() => handleDelete(data.id)}>
                             <a x-data="{ tooltip: 'Delete' }" href="#">

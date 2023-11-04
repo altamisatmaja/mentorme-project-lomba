@@ -55,7 +55,7 @@ function Jadwal() {
               </div>
             </div>
             <h6 className="font-semibold p-2 mb-5 text-lg">
-            <h1 className="font-semibold">Waktu :</h1>
+            <h1 className="font-semibold">Request :</h1>
               <p className="font-medium">{data.request}</p>
             </h6>
           </div>

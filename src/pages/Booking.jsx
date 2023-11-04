@@ -102,7 +102,7 @@ const handleSubmit = (e) => {
                     id="editor"
                     rows="8"
                     className="block px-0 w-full text-sm text-gray-800 bg-white border-0  focus:ring-0"
-                    placeholder="Masukkan deskripsi mentor..."
+                    placeholder="Masukkan request Anda 🤗..."
                     required
                   ></textarea>
                 </div>

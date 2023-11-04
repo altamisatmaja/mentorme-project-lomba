@@ -80,7 +80,7 @@ function Edit() {
               <input required type="text" value={dataToEdit.hasilpenelitian} onChange={(e) => setDataToEdit({ ...dataToEdit, hasilpenelitian: e.target.value })} className='border w-full rounded-md px-2 h-10 text-sm font-medium border-blue-200' />
             </div>
             <div className='px-2 mt-5'>
-              <p className='text-lg font-medium'>Hasil Peneliian</p>
+              <p className='text-lg font-medium'>Fee</p>
               <input required type="text" value={dataToEdit.fee} onChange={(e) => setDataToEdit({ ...dataToEdit, fee: e.target.value })} className='border w-full rounded-md px-2 h-10 text-sm font-medium border-blue-200' />
             </div>
           </div>

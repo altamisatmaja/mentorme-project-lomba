@@ -58,7 +58,7 @@ function About() {
             <a
               className="inline-flex items-center font-medium text-blue-600 hover:text-blue-800 "
             >
-              Cari jadwal gratis
+              Cari jadwal
               <svg
                 className="ml-1 w-6 h-6"
                 fill="currentColor"

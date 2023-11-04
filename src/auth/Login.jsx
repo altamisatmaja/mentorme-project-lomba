@@ -22,7 +22,7 @@ function Login() {
         console.log("Entered Password:", password);
         return res.json();
       }).then((resp) => {
-        alert(`Selamt datang ${username}, anda berhasil masuk!`)
+        alert(`Selamat datang ${username}, anda berhasil masuk!`)
         usenavigate('/jadwal');
       }).catch((err) => {
         toast.error('Login Failed due to :' + err.message);
